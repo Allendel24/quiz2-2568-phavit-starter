@@ -31,6 +31,10 @@ export default function AddFoodModal({}: AddFoodModalProps) {
   let val_number: number = Number("500.0");
   console.log(val_number + 100); // 600.0
 
+  const inputNameOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
   return {
     /* Type additional text here. */
   };
