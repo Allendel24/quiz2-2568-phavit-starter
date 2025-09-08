@@ -15,18 +15,18 @@ export default function FoodTracker() {
   const [items, setItems] = useState<FoodItem[]>([]);
   const categories = ["Main Course", "Drink", "Dessert"];
 
-  const handleAdd = () => {
-    //make a new array based on old "tasks" and add newTask as last one
-    const newItem: FoodItem = {
-      id: uuidv4(),
-      name:,
-      price,
-      quantity,
-      category
+  // const handleAdd = () => {
+  //   //make a new array based on old "tasks" and add newTask as last one
+  //   const newItem: FoodItem = {
+  //     id: uuidv4(),
+  //     // name:,
+  //     // price:,
+  //     // quantity:,
+  //     // category:
 
-    };
-    setItems((prev) => [...prev, newItem]);
-  };
+  //   };
+  //   setItems((prev) => [...prev, newItem]);
+  // };
 
   // const deleteItem = (foodId: string) => {
   //   const newFoods = items.filter((item: FoodItem) => item.id !== foodId);
@@ -41,7 +41,7 @@ export default function FoodTracker() {
         Food Tracker
       </Title>
       <Button
-      onClick={handleAdd()}
+      // onClick={handleAdd()}
       >
         Add Food Item
       </Button>
